@@ -44,14 +44,15 @@ function App() {
 
   return (
     <Container fluid className="my-4">
-      <nav className="navbar navbar-light bg-light mb-5">
-        <div className="container d-flex justify-content-center">
-          <span className="navbar-brand mb-0 h1 text-center">
-            Web scraper - Vite + React + TS + Bootstrap CSS + Cheerio (In
-            nodejs)
-          </span>
-        </div>
-      </nav>
+      <header
+        className="d-flex justify-content-center align-items-center mb-5"
+        style={{ backgroundColor: "#f0f0f0", padding: "2rem" }}
+      >
+        <h3 className="text-center text-dark">
+          Web scraper - Vite + React + TS + Bootstrap CSS + Cheerio (In nodejs)
+        </h3>
+      </header>
+
       <div className="d-flex justify-content-center mb-4">
         <form
           onSubmit={handleSubmit}
@@ -79,11 +80,13 @@ function App() {
           </div>
         </form>
       </div>
+
       {noData && (
         <div className="alert alert-danger w-100 w-sm-25 mx-auto" role="alert">
           {noData}
         </div>
       )}
+
       {loading && (
         <div className="d-flex justify-content-center my-5">
           <Spinner animation="border" role="status">
@@ -91,11 +94,13 @@ function App() {
           </Spinner>
         </div>
       )}
+
       {specifications &&
         specifications.general &&
         specifications.general.name && (
           <MobileSpecification specifications={specifications} />
         )}
+
       <FloatingIcon />
     </Container>
   );
