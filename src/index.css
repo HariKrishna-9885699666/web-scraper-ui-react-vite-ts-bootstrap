@@ -1,0 +1,37 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.image-gallery {
+  max-width: 800px; /* Adjust the maximum width as per your requirement */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.image-gallery .carousel-image {
+  object-fit: contain; /* Preserve aspect ratio and fit the image within the container */
+  max-height: 500px; /* Adjust the maximum height as per your requirement */
+}
+
+code.image-gallery {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-gallery .carousel-image {
+  object-fit: contain;
+  max-height: 500px;
+}
+
+.image-gallery .carousel-control-prev,
+.image-gallery .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+  width: 40px; /* Adjust the width of the controls */
+  height: 40px; /* Adjust the height of the controls */
+  border-radius: 50%; /* Make the controls circular */
+  opacity: 0.7; /* Adjust the opacity of the controls */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  margin-top: 220px;
+}
+
+.image-gallery .carousel-control-prev:hover,
+.image-gallery .carousel-control-next:hover {
+  opacity: 1; /* Increase the opacity on hover */
+}
