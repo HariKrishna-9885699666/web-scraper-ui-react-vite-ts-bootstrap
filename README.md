@@ -4,7 +4,7 @@ This is a simple web scraper application using React + Vite, TypeScript and Boot
 
 ## Live Demo
 
-You can check out the live demo of the application here: [Chat Application Demo](https://chat-app-ui-react-vite-ts-socket.vercel.app/)
+You can check out the live demo of the application here: [Web Scraper Demo](https://web-scraper-ui-react-vite-ts-bootstra.netlify.app/)
 
 ## Prerequisites
 
